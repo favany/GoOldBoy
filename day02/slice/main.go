@@ -35,6 +35,7 @@ func main() {
 
 	fmt.Println(s5, s6, s7)
 
+	// 切片的容量是指底层数组的容量
 	// 切片再切割
 	s8 := s6[3:] // [13]
 	fmt.Printf("len(s2):%d cap(s2):%d \n", len(s8), cap(s8))
