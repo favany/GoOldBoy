@@ -36,5 +36,5 @@ func main() {
 	for i, v := range s3 {
 		fmt.Println(i, v)
 	}
-	
+
 }
