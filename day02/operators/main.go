@@ -17,7 +17,9 @@ func main() {
 	fmt.Println(a * b)
 	fmt.Println(a / b)
 	fmt.Println(a % b)
-	a++ // 单独的语句
+
+	// ++ 和 -- 是单独的语句，不是运算符
+	a++
 	b--
 	fmt.Println(a)
 
@@ -30,7 +32,7 @@ func main() {
 	fmt.Println(a < b)
 
 	// 逻辑运算符
-	// 如果年龄大于18 并且小于60
+	// && ：如果年龄大于18 并且小于60
 	age := 22
 	if age > 18 && age < 60 {
 		fmt.Println("苦逼上班")
@@ -38,14 +40,14 @@ func main() {
 		fmt.Println("不用上班！")
 	}
 
-	// 如果年龄大于18 或者 小于60
+	// || ：如果年龄大于18 或者 小于60
 	if age < 18 || age > 60 {
 		fmt.Println("不用上班！")
 	} else {
 		fmt.Println("苦逼上班！")
 	}
 
-	// not 取反! 原来为真，就为 假
+	// ! ：取反，原来为真，就为假
 	isMarried := false
 	println(isMarried, !isMarried)
 
