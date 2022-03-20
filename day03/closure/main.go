@@ -14,7 +14,7 @@ func f2(x, y int) {
 	fmt.Println(x + y)
 }
 
-//// 定义一个函数对 f2 进行包装
+// 定义一个函数对 f2 进行包装
 func lixiang(x func(int, int), m, n int) func() {
 	temp := func() {
 		x(m, n)
