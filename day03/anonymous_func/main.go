@@ -1,5 +1,6 @@
 package main
 
+// 匿名函数
 import "fmt"
 
 var f1 = func(x, y int) {

@@ -9,13 +9,13 @@ func f1(f func()) {
 	f()
 }
 
-func f2(x, y int) {
-	fmt.Println("this is f2")
+func sum(x, y int) {
+	fmt.Println("this is sum()")
 	fmt.Println(x + y)
 }
 
-// 定义一个函数对 f2 进行包装
-func lixiang(x func(int, int), m, n int) func() {
+// 定义函数包装器包装 funcWrapper
+func funcWrapper(x func(int, int), m, n int) func() {
 	temp := func() {
 		x(m, n)
 	}
@@ -24,6 +24,6 @@ func lixiang(x func(int, int), m, n int) func() {
 
 // 闭包
 func main() {
-	ret := lixiang(f2, 100, 200)
+	ret := funcWrapper(sum, 100, 200)
 	ret()
 }
