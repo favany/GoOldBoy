@@ -43,7 +43,7 @@ func main() {
 	fmt.Println("f1:", valueF1)
 
 	valueF2 := f2()
-	fmt.Println("f2:", valueF2)
+	fmt.Println("f2:", valueF2) // 6
 
 	valueF3 := f3()
 	fmt.Println("f3:", valueF3)
